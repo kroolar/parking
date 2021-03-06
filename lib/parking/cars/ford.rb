@@ -1,0 +1,77 @@
+module Parking
+  module Cars
+    class Ford < Brand
+      @name = 'Ford'
+      @country = 'USA'
+      @founders = ['Henry Ford']
+      @foundation_date = Date.new(1903, 6, 16)
+      @foundation_place = 'Detroit, USA'
+      @models = [
+        'Aerostar',
+        'Aspire',
+        'B-MAX',
+        'Bronco',
+        'C-MAX',
+        'Capri',
+        'Contour',
+        'Cougar',
+        'Courier',
+        'Crown Victoria',
+        'Econoline',
+        'Econovan',
+        'Ecosport',
+        'Edge',
+        'Edge Vignale',
+        'Escape',
+        'Escort',
+        'Escort USA',
+        'Excursion',
+        'Expedition',
+        'Explorer',
+        'Express',
+        'Falcon',
+        'Festiva',
+        'Fiesta',
+        'Fiesta Vignale',
+        'Flex',
+        'Focus',
+        'Focus Vignale',
+        'Freestar',
+        'Fusion',
+        'Galaxy',
+        'Granada',
+        'GT',
+        'Ka',
+        'Ka Plus',
+        'Kuga',
+        'Kuga Vignale',
+        'LTD',
+        'Maverick',
+        'Mondeo',
+        'Mondeo Vignale',
+        'Mustang',
+        'Orion',
+        'Probe',
+        'Puma',
+        'Ranger',
+        'S-Max',
+        'S-Max Vignale',
+        'Scorpio',
+        'seria F',
+        'Sierra',
+        'Taunus',
+        'Taurus',
+        'Tempo',
+        'Thunderbird',
+        'Tourneo Connect',
+        'Tourneo Courier',
+        'Tourneo Custom',
+        'Transit',
+        'Transit Connect',
+        'Transit Courier',
+        'Transit Custom',
+        'Windstar'
+      ]
+    end
+  end
+end

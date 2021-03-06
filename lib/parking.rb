@@ -1,8 +1,6 @@
-# frozen_string_literal: true
+require 'date'
+require 'require_all'
+require_all 'lib'
 
-require_relative "parking/version"
 
-module Parking
-  class Error < StandardError; end
-  # Your code goes here...
-end
+module Parking; end
