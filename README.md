@@ -20,17 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-```
-require 'parkin'
+```ruby
+require 'parking'
 
-Parking::Cars.brands                        #=> ['Abarth', 'Acura', 'Aixam', ...], 
-Parking::Cars.random                        #=> 'Renault Megane'
-Parking::Cars::Volkswagen.random            #=> 'Passat'
+Parking::Cars.brands                        # => ['Abarth', 'Acura', 'Aixam', ...], 
+Parking::Cars.random                        # => 'Renault Megane'
+Parking::Cars::Volkswagen.random            # => 'Passat'
 
-Parking::Cars::Audi.name                    #=> 'Audi'
-Parking::Cars::BMW.country                  #=> 'Germany'
-Parking::Cars::Dacia.foundation_date        #=> '1903-06-16'
-Parking::Cars::Ferrari.foundation_place     #=> Maranello, Italy'
-Parking::Cars::Abarth.founders              #=> ['Carlo Abarth', 'Armando Scagliarini']
-Parking::Cars::Lamborghini.models           #=> ['Aventador', 'Countach', 'Diablo', ...]
+Parking::Cars::Audi.name                    # => 'Audi'
+Parking::Cars::BMW.country                  # => 'Germany'
+Parking::Cars::Dacia.foundation_date        # => '1903-06-16'
+Parking::Cars::Ferrari.foundation_place     # => Maranello, Italy'
+Parking::Cars::Abarth.founders              # => ['Carlo Abarth', 'Armando Scagliarini']
+Parking::Cars::Lamborghini.models           # => ['Aventador', 'Countach', 'Diablo', ...]
 ```
