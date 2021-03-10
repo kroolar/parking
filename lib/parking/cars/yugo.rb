@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Yugo < Brand
       @name = 'Yugo'
-      @country = ''
+      @country = 'Yugoslavia'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

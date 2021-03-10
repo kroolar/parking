@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Ds < Brand
       @name = 'DS'
-      @country = ''
+      @country = 'France'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Syrena < Brand
       @name = 'Syrena'
-      @country = ''
+      @country = 'Poland'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

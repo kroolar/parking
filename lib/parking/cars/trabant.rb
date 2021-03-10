@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Trabant < Brand
       @name = 'Trabant'
-      @country = ''
+      @country = 'Germany'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Iveco < Brand
       @name = 'Iveco'
-      @country = ''
+      @country = 'Italy'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

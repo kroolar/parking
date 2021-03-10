@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Buick < Brand
       @name = 'Buick'
-      @country = ''
+      @country = 'USA'
       @founders = []
       @foundation_date = Date.new
       @foundation_place = ''

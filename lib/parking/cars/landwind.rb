@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Landwind < Brand
       @name = 'Landwind'
-      @country = ''
+      @country = 'China'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

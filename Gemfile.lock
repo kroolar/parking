@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    parking (0.1.2)
+    parking (0.1.3)
       require_all
 
 GEM

@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Saab < Brand
       @name = 'Saab'
-      @country = ''
+      @country = 'Sweden'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

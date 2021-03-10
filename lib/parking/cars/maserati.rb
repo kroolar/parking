@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Maserati < Brand
       @name = 'Maserati'
-      @country = ''
+      @country = 'Italy'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

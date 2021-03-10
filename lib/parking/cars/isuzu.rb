@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Isuzu < Brand
       @name = 'Isuzu'
-      @country = ''
+      @country = 'Japan'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Hyundai < Brand
       @name = 'Hyundai'
-      @country = ''
+      @country = 'South Korea'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''

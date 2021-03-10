@@ -2,7 +2,7 @@ module Parking
   module Cars
     class Jeep < Brand
       @name = 'Jeep'
-      @country = ''
+      @country = 'USA'
       @founders = []
       @foundation_date = Date.new(1903, 6, 16)
       @foundation_place = ''
