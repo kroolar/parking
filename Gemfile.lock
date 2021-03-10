@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    parking (0.1.1)
+    parking (0.1.2)
+      require_all
 
 GEM
   remote: https://rubygems.org/
