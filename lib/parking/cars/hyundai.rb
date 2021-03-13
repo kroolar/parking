@@ -4,7 +4,7 @@ module Parking
       @name = 'Hyundai'
       @country = 'South Korea'
       @founders = []
-      @foundation_date = Date.new(1903, 6, 16)
+      @foundation_date = ''
       @foundation_place = ''
       @models = [
         'Accent',

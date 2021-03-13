@@ -4,7 +4,7 @@ module Parking
       @name = 'Hummer'
       @country = 'USA'
       @founders = []
-      @foundation_date = Date.new(1903, 6, 16)
+      @foundation_date = ''
       @foundation_place = ''
       @models = [
         'H1',

@@ -3,7 +3,7 @@ module Parking
     class Aixam < Brand
       @name = 'Aixam'
       @country = 'France'
-      @founders = []
+      @founders = ['Polaris Industries']
       @foundation_date = Date.new(1983)
       @foundation_place = ''
       @models = [

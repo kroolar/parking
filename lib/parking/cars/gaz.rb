@@ -4,7 +4,7 @@ module Parking
       @name = 'GAZ'
       @country = 'Russia'
       @founders = []
-      @foundation_date = Date.new(1903, 6, 16)
+      @foundation_date = ''
       @foundation_place = ''
       @models = [
         '21',

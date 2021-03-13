@@ -4,7 +4,7 @@ module Parking
       @name = 'Ford'
       @country = 'USA'
       @founders = ['Henry Ford']
-      @foundation_date = Date.new(1903, 6, 16)
+      @foundation_date = ''
       @foundation_place = 'Detroit, USA'
       @models = [
         'Aerostar',

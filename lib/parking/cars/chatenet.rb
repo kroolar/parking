@@ -3,8 +3,8 @@ module Parking
     class Chatenet < Brand
       @name = 'Chatenet'
       @country = 'France'
-      @founders = []
-      @foundation_date = Date.new(1903, 6, 16)
+      @founders = ['Louis-Georges Chatenet']
+      @foundation_date = ''
       @foundation_place = ''
       @models = [
         'CH26',
