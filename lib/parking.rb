@@ -1,5 +1,5 @@
 require 'date'
 require 'require_all'
-require_rel 'lib'
+require_all 'lib'
 
 module Parking; end
