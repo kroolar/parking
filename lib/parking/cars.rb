@@ -77,7 +77,7 @@ module Parking
         'Seat',
         'Skoda',
         'Smart',
-        'Ssangyong',
+        'SsangYong',
         'Subaru',
         'Suzuki',
         'Syrena',
@@ -96,24 +96,38 @@ module Parking
       end
 
       def random
-        make = brands.sample.humanize
-        make_class = Object.const_get("Parking::Cars::#{make}")
-        model = make_class.models.sample
+        brand_class = Object.const_get(class_name(brands.sample))
 
-        "#{make} #{model}"
+        "#{brand_class.name} #{brand_class.models.sample}"
       end
 
-      def from(country)
-        brands = ['Fiat', 'Ferrari', 'Bmw', 'Audi', 'Fso', 'Syrena']
-        from_country = []
+      def method_missing(method, *args)
+        if method.to_s.start_with?('from')
+          country = method.to_s.sub('from_', '')
+          country.sub!('_', ' ')
 
-        brands.each do |brand|
-          brand_class = Object.const_get("Parking::Cars::#{brand}")
+          brands.map do |brand|
+            brand_class = Object.const_get(class_name(brand))
 
-          from_country << brand_class if brand_class.country == country
-        end     
-        
-        from_country
+            brand_class.name if brand_class.country.downcase == country
+          end.compact
+        end
+      end
+
+      def countries
+        brands.map { |brand| Object.const_get(class_name(brand)).country }.uniq
+      end
+
+      private
+
+      def class_name(brand)
+        brand.gsub!('-', ' ') if brand == 'Rolls-Royce'
+        brand.gsub!('L', ' L') if brand == 'DeLorean'
+        brand.gsub!('Y', ' Y') if brand == 'SsangYong'
+
+        brand.split.size > 1 && brand.delete!(' ') || brand.capitalize!
+
+        "Parking::Cars::#{brand}"
       end
     end
   end
